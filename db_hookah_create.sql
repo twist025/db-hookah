@@ -1,6 +1,3 @@
---CREATE TYPE sex AS ENUM ('Муж', 'Жен'); 
---CREATE TYPE _position AS ENUM ('Кальянщик', 'Менеджер'); 
-
 CREATE TABLE IF NOT EXISTS passport ( 
 id_passport_data serial NOT NULL PRIMARY KEY, 
 series VARCHAR (4) NOT NULL, 
