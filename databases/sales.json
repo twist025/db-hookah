@@ -1,0 +1,8 @@
+[{
+"id": 0,
+"id_staff": 0,
+"id_workshift": 0,
+"date": "yyyy-mm-dd",
+"time": "hh:mm:ss",
+"basket": [{"id": 0, "type": "", "amount": 0}]
+}]

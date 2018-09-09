@@ -1,0 +1,19 @@
+[{
+"id": "",
+"date": 0,
+"surname": "",
+"name": "",
+"patronimyc": "",
+"date_of_birth": "yyyy-mm-dd",
+"citizenship": "",
+"education": "",
+"marital_status": "",
+"phone_number": "",
+"experience": "",
+"brutality": "",
+"drugs": "",
+"med_book": "",
+"seconds_stap_day": "yyyy-mm-dd",
+"description": "",
+"questions": {"id": 0, "answer": ""}
+}]

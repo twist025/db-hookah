@@ -1,0 +1,24 @@
+[{
+"id": 0,
+"contract": 0,
+"position": 0,
+"salary": 10000,
+"actual_address": "",
+"phone_number": "",
+"passport": {
+	"series": 0,
+	"number": 0,
+	"issued": "yyyy-mm-dd",
+	"photo_link": "",
+	"surname": "",
+	"name": "",
+	"patronimyc": "",
+	"date_of_birth": "",
+	"sex": "",
+	"registration_address": ""
+},
+"account": {
+	"login": "",
+	"password": ""
+} 
+}]

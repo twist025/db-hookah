@@ -1,0 +1,7 @@
+[{
+"id": 0,
+"date": "yyyy-mm-dd",
+"plan_id": 0,
+"revenue": 20000,
+"workers": [{"id": 0, "appearance": 600}, {"id": 1, "appearance": 500}]
+}]
