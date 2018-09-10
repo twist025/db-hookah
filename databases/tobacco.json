@@ -1,1 +1,4 @@
-[{"id": 0, "name": "", "price": 0, "description": ""}]
+[
+{"id": 0, "name": "", "price": 0, "description": ""}, 
+{"name": "\u0422\u0430\u0431\u0430\u043a1", "price": 666, "description": "", "id": 1},
+{"name": "\u0422\u0430\u0431\u0430\u043a2", "price": 555, "description": "", "id": 2}]
