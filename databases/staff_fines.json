@@ -2,6 +2,7 @@
   "date": "0000-00-00",
   "id_staff": 0,
   "id_workshift": 0,
+  "id_filial": 0,
   "id_fine": 0,
   "description": "штраф не из базы, читается при id_fine = -1",
   "cost": 100}]
