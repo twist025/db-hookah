@@ -1,0 +1,10 @@
+[{"id": 0,
+"timecode": 0, "id_filial": 0, "id_staff": 0,
+"cleanness": {
+  "shafts": {"clean": 0, "pic": ""},
+  "bowls": {"clean": 0, "pic": ""},
+  "fillers": {"clean": 0, "pic": ""},
+  "heatkeeper": {"clean": 0, "pic": ""},
+  "flasks": {"clean": 0, "pic": ""}
+}
+}]
