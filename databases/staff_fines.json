@@ -1,8 +1,11 @@
 [{"id": 0,
-  "date": "0000-00-00",
+  "datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
   "id_staff": 0,
+  "id_from": 0,
   "id_workshift": 0,
   "id_filial": 0,
   "id_fine": 0,
   "description": "штраф не из базы, читается при id_fine = -1",
-  "cost": 100}]
+  "cost": -100,
+  "pic": "",
+  "comment": ""}]

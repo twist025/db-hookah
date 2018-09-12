@@ -1,6 +1,6 @@
 [{
 "id": "",
-"date": 0,
+"datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
 "surname": "",
 "name": "",
 "patronimyc": "",

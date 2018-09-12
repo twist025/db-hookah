@@ -2,10 +2,12 @@ import json
 import os
 
 DB_PATH = ''
+NOT_DB_FILES = ['test.py', 'README.md', 'pic1.png']
+
 
 # проверка корректности записей путём парсинга
 for file in list(os.walk('.'))[0][2]:
-    if file != 'test.py':
+    if file not in NOT_DB_FILES:
         try:
             json.load(open(file))
         except json.decoder.JSONDecodeError:
@@ -77,7 +79,7 @@ def create_plan_on_(year, month, micro, plan):
 def get_all_db_data():
     database = {}
     for file in list(os.walk('.'))[0][2]:
-        if file != 'test.py':
+        if file not in NOT_DB_FILES:
             database[file[:-5]] = json.load(open(f'{DB_PATH}{file}'))
     return database
 
@@ -93,11 +95,11 @@ def print_workshift_report_from_(year, month):
     table = td.Table('', header=['Число', 'День', 'Микро', 'Минимум', 'План', 'Сверхплан', 'Выручка', 'Сотрудники', 'Выход', 'Процент', 'Премии'])
     database = get_all_db_data()
     target_plan = list(filter(lambda x: x["month"] == month and x["year"] == year, database['plans']))[0]
-    sales = list(filter(lambda x: int(x['date'].split('-')[0]) == year and int(x['date'].split('-')[1]) == month, database['sales']))
-    workshifts = list(filter(lambda x: int(x['date'].split('-')[0]) == year and int(x['date'].split('-')[1]) == month, database['workshifts']))
+    sales = list(filter(lambda x: x['datetime']['y'] == year and x['datetime']['m'] == month, database['sales']))
+    workshifts = list(filter(lambda x: x['datetime']['y'] == year and x['datetime']['m'] == month, database['workshifts']))
     for day in target_plan["day"]:
-        day_workshift = list(filter(lambda x: int(x['date'].split('-')[2]) == int(day), workshifts))
-        day_sales = list(filter(lambda x: int(x['date'].split('-')[2]) == int(day), sales))
+        day_workshift = list(filter(lambda x: x['datetime']['d'] == int(day), workshifts))
+        day_sales = list(filter(lambda x: x['datetime']['d'] == int(day), sales))
         money = []
         ws = []
         appearance = []

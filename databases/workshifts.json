@@ -1,12 +1,12 @@
 [{
 "id": 0,
-"date": "0000-00-00",
+"datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
 "plan_id": 0,
 "workers": [{"id": 0, "appearance": 600}]
 },
 {
 "id": 1,
-"date": "2018-09-01",
+"datetime": {"d": 1, "m": 9, "y": 2018, "h": 0, "min": 0, "sec": 0},
 "plan_id": 1,
 "workers": [{"id": 1, "appearance": 600}, {"id": 2, "appearance": 500}]
 }
