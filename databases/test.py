@@ -2,7 +2,7 @@ import json
 import os
 
 DB_PATH = ''
-NOT_DB_FILES = ['test.py', 'README.md', 'pic1.png']
+NOT_DB_FILES = ['test.py', 'README.md', 'pic1.png', 'speed_test.py']
 
 
 # проверка корректности записей путём парсинга
@@ -97,6 +97,7 @@ def print_workshift_report_from_(year, month):
     target_plan = list(filter(lambda x: x["month"] == month and x["year"] == year, database['plans']))[0]
     sales = list(filter(lambda x: x['datetime']['y'] == year and x['datetime']['m'] == month, database['sales']))
     workshifts = list(filter(lambda x: x['datetime']['y'] == year and x['datetime']['m'] == month, database['workshifts']))
+
     for day in target_plan["day"]:
         day_workshift = list(filter(lambda x: x['datetime']['d'] == int(day), workshifts))
         day_sales = list(filter(lambda x: x['datetime']['d'] == int(day), sales))
@@ -132,6 +133,20 @@ def print_workshift_report_from_(year, month):
                           [int(sum(money) * 0.1)]*len(ws),
                           0])
     table.print_table()
+
+
+def print_storage():
+    from TableDraw import Table
+    storages = []
+    database = get_all_db_data()
+    for st in database['storage']:
+        if st['id'] != 0:
+            filial = find_by_id_('filials', id=st['location'])
+            storages.append(Table(filial['name'], header=['Название', 'Стоимость', 'Необходимое количество']))
+            for elem in st['storage']:
+                storages[-1].insert_row([find_by_id_(elem['type'], elem['id'])['name'], elem['amount'], elem['need_amount']])
+    for elem in storages:
+        elem.print_table()
 
 
 def main():
@@ -211,7 +226,22 @@ def main():
     #     "time": "12:20:06",
     #     "basket": sale_2
     # })
-    print_workshift_report_from_(2018, 9)
+    # print_workshift_report_from_(2018, 9)
+    # add_record_to_('filials', {"name": "Бар1", "description": ""})
+    # add_record_to_('filials', {"name": "Бар2", "description": ""})
+    # add_record_to_('filials', {"name": "Бар3", "description": ""})
+    # add_record_to_('storage', {"location": 1, "storage": [
+    #     {"id": 1, "type": "bowls", "amount": 5, "need_amount": 10},
+    #     {"id": 2, "type": "bowls", "amount": 6, "need_amount": 7},
+    #     {"id": 1, "type": "flasks", "amount": 5, "need_amount": 10},
+    #     {"id": 1, "type": "tobacco", "amount": 50, "need_amount": 50}
+    # ]})
+    # add_record_to_('storage', {"location": 2, "storage": [
+    #     {"id": 2, "type": "bowls", "amount": 6, "need_amount": 7},
+    #     {"id": 2, "type": "flasks", "amount": 5, "need_amount": 10},
+    #     {"id": 2, "type": "tobacco", "amount": 45, "need_amount": 50}
+    # ]})
+    print_storage()
 
 
 if __name__ == '__main__':

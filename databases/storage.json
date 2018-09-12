@@ -1,10 +1,1 @@
-[{
-"id": 0,  
-"location": 0,
-"storage": [{
-	"id": 0,
-	"type": "",
-	"amount": 1,
-	"need_amount": 1
-  }]
-}]
+[{"id": 0, "location": 0, "storage": [{"id": 0, "type": "", "amount": 1, "need_amount": 1}]}, {"location": 1, "storage": [{"id": 1, "type": "bowls", "amount": 5, "need_amount": 10}, {"id": 2, "type": "bowls", "amount": 6, "need_amount": 7}, {"id": 1, "type": "flasks", "amount": 5, "need_amount": 10}, {"id": 1, "type": "tobacco", "amount": 50, "need_amount": 50}], "id": 1}, {"location": 2, "storage": [{"id": 2, "type": "bowls", "amount": 6, "need_amount": 7}, {"id": 2, "type": "flasks", "amount": 5, "need_amount": 10}, {"id": 2, "type": "tobacco", "amount": 45, "need_amount": 50}], "id": 2}]
