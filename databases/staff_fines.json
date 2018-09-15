@@ -5,7 +5,7 @@
   "id_workshift": 0,
   "id_filial": 0,
   "id_fine": 0,
-  "description": "штраф не из базы, читается при id_fine = -1",
+  "description": "штраф не из базы, читается если id_fine отсутствует",
   "cost": -100,
   "pic": "",
   "comment": ""}]
