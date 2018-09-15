@@ -10,11 +10,7 @@
 "id": 1,
 "datetime": {"d": 1, "m": 9, "y": 2018},
 "plan_id": 1,
-"workers": [{"id": 1, "appearance": 600,
-    "start": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
-    "end": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0}},
-  {"id": 2, "appearance": 500,
-    "start": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
-    "end": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0}}]
+"workers": [{"id": 1, "appearance": 600, "id_shift": 1},
+  {"id": 2, "appearance": 500, "id_shift": 1}]
 }
 ]
