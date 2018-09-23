@@ -1,4 +1,4 @@
-[{"id": 0, "month": 9, "year": 2018, "day": {"1":
+[{"id": 0, "id_fillial": 0, "month": 9, "year": 2018, "day": {"1":
 {"micro": 2000, "minimum": 4000, "plan": 8000, "overplan": 16000}, "2":
 {"micro": 2000, "minimum": 4000, "plan": 8000, "overplan": 16000}, "3":
 {"micro": 2000, "minimum": 4000, "plan": 8000, "overplan": 16000}, "4":
@@ -30,7 +30,7 @@
 {"micro": 2000, "minimum": 4000, "plan": 8000, "overplan": 16000}, "30":
 {"micro": 2000, "minimum": 4000, "plan": 8000, "overplan": 16000}
 }},
-{"id": 1, "month": 10, "year": 2018, "day": {"1":
+{"id": 1, "id_fillial": 1, "month": 10, "year": 2018, "day": {"1":
 {"micro": 20, "minimum": 40, "plan": 50, "overplan": 70}, "2":
 {"micro": 20, "minimum": 40, "plan": 50, "overplan": 70}, "3":
 {"micro": 30, "minimum": 64, "plan": 80, "overplan": 112}, "4":
