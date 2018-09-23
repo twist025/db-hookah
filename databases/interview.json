@@ -4,7 +4,7 @@
 "surname": "",
 "name": "",
 "patronimyc": "",
-"date_of_birth": "yyyy-mm-dd",
+"date_of_birth": {"d": 0, "m": 0, "y": 0},
 "citizenship": "",
 "education": "",
 "marital_status": "",
@@ -13,7 +13,7 @@
 "brutality": "",
 "drugs": "",
 "med_book": "",
-"seconds_stap_day": "yyyy-mm-dd",
+"seconds_stap_day": {"d": 0, "m": 0, "y": 0},
 "description": "",
 "questions": {"id": 0, "answer": ""}
 }]
