@@ -1,8 +1,1 @@
-[{"id": 0,
-  "title": "",
-  "text": "",
-  "pic": "",
-  "likes": [],
-  "datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0},
-  "author": ""
-  }]
+[{"id": 0, "title": "", "text": "", "pic": "", "likes": [], "datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0}, "author": "", "admin-mark": 0}, {"id": 1, "title": "Hello", "text": "Test News", "pic": "", "likes": [1, 2], "datetime": {"d": 0, "m": 0, "y": 0, "h": 0, "min": 0, "sec": 0}, "author": "", "admin-mark": 0}]
